@@ -1,4 +1,4 @@
-import math
+from math import sqrt
 
 latA = int(input("latA: "))
 longA = int(input("longA: "))
@@ -6,7 +6,7 @@ longA = int(input("longA: "))
 latB = int(input("latB: "))
 longB = int(input("longB: "))
 
-distance = math.sqrt((latA - latB)**2 + (longA - longB)**2)
+distance = sqrt((latA - latB)**2 + (longA - longB)**2)
 print(str(distance) + "km")
 
 if distance > 50 and distance <= 1000:
