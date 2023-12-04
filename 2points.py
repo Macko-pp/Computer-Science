@@ -1,5 +1,7 @@
 # Import the sqrt function from the math module
 from math import sqrt
+import matplotlib.pyplot as plt
+import numpy as np
 
 # Get user input for x1, y1, x2, y2
 x1 = int(input("x1: "))
@@ -48,3 +50,11 @@ print(f"Midpoint: {mid}")
 print("")
 print(f"y Intercept: {toInt(yInt)}")
 print(equation)
+
+#-------------------------------------------------------------------------------
+
+x = np.array([x1, x2])
+y = np.array([y1, y2])
+
+plt.plot(x,y)
+plt.show()
