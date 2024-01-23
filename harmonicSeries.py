@@ -4,8 +4,8 @@ la = 0
 n = int(input("n: "))
 
 while (lc <= n):
-    la += 1 / lc
-    print(f"1/{lc}", end=" ")
+    la += 1 / lc ** 2
+    print(f"1/{lc}²", end=" ")
     lc += 1
 
 print("")
