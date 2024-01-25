@@ -19,6 +19,7 @@ while (lc <= packagesNum):
     priceSum += shipPrice
 
     print(f"The shipping price for this package is ${shipPrice}")
-    print(f"Total price for shipment of packages is ${priceSum}")
 
     lc += 1
+
+print(f"Total price for shipment of packages is ${priceSum}")
