@@ -4,7 +4,9 @@ a500 = 0
 a1000 = 0
 coinAmmount = int(input('Enter amont of coins: '))
 
-for i in range(coinAmmount + excess):
+i = 0
+
+while i < coinAmmount:
     # weight = float(input("Coin Weight: "))
     diameter = float(input("Coin Diameter: "))
 
@@ -22,14 +24,15 @@ for i in range(coinAmmount + excess):
 
     else:
         print("Not a Valid Coin")
-        excess += 1
         continue
 
     print(f'''
     ┌─────────────────┐
-    │ 200: {a200}          │
-    │ 500: {a500}          │
-    │ 1000: {a1000}         │
-    │ Total: {a200 * 200 + a500 * 500 + a1000 * 1000}     │
+    │ 200: {a200:<10} │
+    │ 500: {a500:<10} │
+    │ 1000: {a1000:<9} │
+    │ Total: {a200 * 200 + a500 * 500 + a1000 * 1000:<8} │
     └─────────────────┘
-        ''')
+    ''')
+
+    i += 1
